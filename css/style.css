@@ -59,18 +59,6 @@ section {
 
 /* --------------add pictures advantages------------*/
 
-.advantages-item::before {
-    content: '';
-    display: block;
-    height: 120px;
-
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #f5f4fa;
-    margin-bottom: 30px;
-}
-
 /* =======================Header================= */
 .header {
     border-bottom: 1px solid #ececec;
@@ -223,6 +211,7 @@ section {
 
 /* ============================ADVANTAGES=========================== */
 .visually-hidden {
+    /* скрыть заголовок*/
     position: absolute;
     width: 1px;
     height: 1px;
@@ -257,20 +246,16 @@ section {
 }
 
 /* --------------add pictures advantages------------*/
-
-.pic-antena::before {
-    background-image: url(../img/advantages/antenna.svg);
+.advntage-blok {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    fill: #afb1b8;
+    background-color: #f5f4fa;
 }
-.pic-clock::before {
-    background-image: url(../img/advantages/clock.svg);
-}
-.pic-diagrama::before {
-    background-image: url(../img/advantages/diagram.svg);
-}
-.pic-cosmo::before {
-    background-image: url(../img/advantages/astronaut.svg);
-}
-
 /* ============================OURS SERVISES=========================== */
 .our-services {
     padding-top: 0;
@@ -329,6 +314,7 @@ section {
 }
 .team-title-work {
     font-size: 16px; /* Параметры шрифта <p> */
+    margin-bottom: 16px;
 }
 
 /*----------------------icon sotial team--===============================-*/
@@ -375,7 +361,6 @@ section {
     fill: #afb1b8;
     border-radius: 4px;
     border: 1px solid #afb1b8;
-    padding: 16px 32px;
 }
 .cliets-list > li:not(:last-child) {
     margin-right: 30px; /*Отступ всем кроме последнего menu*/
@@ -432,6 +417,7 @@ address p {
 
 .footer-container {
     display: flex; /*footer left i footer social in line*/
+    align-items: baseline;
 }
 
 .footer-social {
