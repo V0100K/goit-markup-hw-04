@@ -368,8 +368,8 @@ section {
 
 .client-link:hover,
 .client-link:focus {
-    background-color: var(--accent-text-color);
-    fill: var(--wite-color);
+    border-color: var(--accent-text-color);
+    fill: var(--accent-text-color);
 }
 .clients-icon {
     fill: inherit;
