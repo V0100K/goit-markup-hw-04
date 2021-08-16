@@ -297,6 +297,7 @@ section {
 .team-item {
     width: calc((100% - 120px) / 4); /* add formula calc  + margin  ---.team-list .team-item + .team-item */
     margin-left: 30px;
+    background-color: var(--wite-color);
 }
 
 .team-item-title {
